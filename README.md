@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+# ExamShield
 
-## Project info
+**Predict failure and burnout—before exams do.**  
+ExamShield is an AI-powered academic risk and burnout prediction tool designed to help students identify potential issues **before exams happen** and take preventive actions.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## Table of Contents
+- [ExamShield](#examshield)
+  - [Table of Contents](#table-of-contents)
+  - [Inspiration](#inspiration)
+  - [What it Does](#what-it-does)
+  - [How I Built It](#how-i-built-it)
+  - [Challenges](#challenges)
+  - [Accomplishments](#accomplishments)
+  - [Future Plans](#future-plans)
+  - [Tech Stack](#tech-stack)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Inspiration
+Many students don’t fail because they don’t study—they fail because they realize problems too late. Burnout, missed topics, and poor planning often appear only days before exams. I wanted to create a tool that acts as an **early-warning system** to prevent last-minute stress and failure.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## What it Does
+ExamShield allows students to enter:
+- Subjects and exam dates
+- Daily study hours
+- Missed study days
+- Topic difficulty
+- Stress levels  
 
-**Use your preferred IDE**
+It outputs:
+- Academic risk (Low / Medium / High)
+- Burnout probability
+- Subject-wise weakness analysis
+- Actionable recommendations for improvement
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## How I Built It
+- **Frontend:** HTML5, CSS3 (Flexbox & Grid), JavaScript (ES6)
+- **Visualization:** Chart.js for risk indicators, progress charts
+- **Logic / AI:** Rule-based scoring system, enhanced with AI-generated insights
+- **Data Storage:** Browser LocalStorage (no backend required)
 
-Follow these steps:
+**Risk Score Formula:**
+\[
+\text{Risk Score} = w_1(\text{Missed Study Days}) + w_2(\text{Topic Difficulty}) + w_3(\text{Stress Level}) - w_4(\text{Daily Study Hours})
+\]
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Challenges
+- Balancing **simplicity** with meaningful predictive insights
+- Designing the interface to feel **supportive**, not stressful
+- Prioritizing impactful features within a **short hackathon timeframe**
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Accomplishments
+- Built a fully functional predictive tool as a **solo participant**
+- Created a **clear, intuitive dashboard** for risk analysis
+- Designed a **student-friendly UI** with calming visual feedback
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Future Plans
+- Improve prediction accuracy with real student data
+- Add offline-first functionality for low-connectivity regions
+- Integrate calendar syncing and long-term progress tracking
+- Explore partnerships with schools and online learning platforms
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Tech Stack
+- **Frontend:** HTML5, CSS3, JavaScript (ES6)
+- **Charts / Visualization:** Chart.js
+- **Fonts & Icons:** Google Fonts, Lucide / Material Icons
+- **Data Storage:** Browser LocalStorage
+- **Optional AI:** OpenAI API for insights
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
